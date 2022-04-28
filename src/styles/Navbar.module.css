@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    max-width: 1440px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background: #FFFFFF;
+}
+
+.name_search {
+    display: flex;
+}
+
+.search {
+    width: 392px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #F2F2F3;
+}
+
+.search::-webkit-input-placeholder {
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+}
+
+.search:focus {
+    outline: none;
+}
+.profiles {
+    display: flex;
+}
+
+.profileImg {
+    width: 32px;
+    height: 32px;
+}
