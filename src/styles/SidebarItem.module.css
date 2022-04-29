@@ -1,0 +1,18 @@
+.item {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #6B6C72;
+    padding-left: 15px;
+}
+.active{
+    background-color: #FFFFFF;
+    color: #00C614;
+    width: 188px;
+    height: 40px;
+    border-radius: 4px;
+    /* padding-left: 10px; */
+}

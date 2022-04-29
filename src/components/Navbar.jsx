@@ -12,7 +12,7 @@ const Navbar = () => {
                         Dropdown
                     </p>
                 </div>
-                <div className={`${styles.links} px-5 ms-5`}>
+                <div className={`${styles.links} px-5 ms-5 pt-1`}>
                     <input className={styles.search} placeholder="&#61442; Search" type="search" name="search" id="search" />
                 </div>
             </div>

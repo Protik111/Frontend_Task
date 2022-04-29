@@ -29,6 +29,10 @@
     vertical-align: top;
     display: inline-block !important;
     padding-left: 5px;
+    font-size: 16px;
+    color: #88898E;
+    font-weight: 400;
+    font-style: Inter;
 }
 
 .search:focus {
