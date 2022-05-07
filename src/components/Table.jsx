@@ -19,12 +19,13 @@ const rows = [
 
 const Table = () => {
     const matches = useMediaQuery("(max-width:800px)");
+    const matches2 = useMediaQuery("(max-width:390px)");
 
     const columns = [
-        { field: 'id', headerName: 'Date Updated', headerClassName: 'super-app-theme--header', width: 140 },
-        { field: 'title', headerName: 'Title', headerClassName: 'super-app-theme--header', width: 120 },
+        { field: 'id', headerName: 'Date Updated', headerClassName: 'super-app-theme--header', width: 140, hide: matches2 },
+        { field: 'title', headerName: 'Title', headerClassName: 'super-app-theme--header', width: 100 },
         { field: 'details', headerName: 'Details', headerClassName: 'super-app-theme--header', width: 270, hide: matches },
-        { field: 'status', headerName: 'Status', headerClassName: 'super-app-theme--header', width: 150 },
+        { field: 'status', headerName: 'Status', headerClassName: 'super-app-theme--header', width: 150, hide: matches2 },
         { field: 'quantity', headerName: 'Quantity', headerClassName: 'super-app-theme--header quantity', width: 100 },
         { field: 'price', headerName: 'Unit Price', headerClassName: 'super-app-theme--header', width: 110, hide: matches },
         { field: 'amount', headerName: 'Amount', headerClassName: 'super-app-theme--header', width: 110 }
@@ -38,8 +39,8 @@ const Table = () => {
                     <div style={{ border: '1px solid #E5E5E6', width: '1204px' }}></div>
                 </div>
             </div>
-            <div className={`${styles.tableContainer} mt-4 ms-4`}>
-                <div className="pt-4 ms-4">
+            <div className={`${styles.tableContainer} mt-4 ms-sm-4 ms-0`}>
+                <div className="pt-4 ms-2 ms-md-4">
                     <input className={styles.search} placeholder="&#61442; Search" type="search" name="search" id="search" />
                 </div>
                 <div className="mt-4" style={{ height: '80%', width: '95%' }}>

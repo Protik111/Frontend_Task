@@ -38,9 +38,19 @@
     outline: none;
 }
 
-@media (max-width) {
+@media (max-width: 800px) {
     .tableContainer {
         width: 646px;
         height: 865px;
+    }
+}
+
+@media (max-width: 390px) {
+    .tableContainer {
+        width: 374px;
+        height: 865px;
+    }
+    .search{
+        width: 342px;
     }
 }

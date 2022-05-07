@@ -8,8 +8,8 @@ const Navbar = () => {
         <nav className={`${styles.container}`}>
             <div className={`${styles.name_search} dropdown`}>
                 <div className={styles.links}>
-                    <p className="dropdown-toggle ms-5 ms-md-3 pt-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                    <p className={`${styles.dropdown} dropdown-toggle ms-5 pt-2`} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Starbucks
                     </p>
                 </div>
                 <div className={`${styles.links} px-5 ms-5 ms-md-0 pt-1`}>

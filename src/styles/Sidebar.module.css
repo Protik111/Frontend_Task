@@ -1,3 +1,9 @@
 .lists {
     display: flex;
 }
+
+/* @media (max-width: 390px) {
+    .sidebar{
+        display: none;
+    }
+} */
