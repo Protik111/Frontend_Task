@@ -6,7 +6,6 @@
     letter-spacing: 0.02em;
     text-align: left;
     color: #6B6C72;
-    padding-left: 15px;
 }
 .active{
     background-color: #FFFFFF;
@@ -15,4 +14,12 @@
     height: 40px;
     border-radius: 4px;
     box-shadow: 0px 3px 1px rgba(20, 40, 82, 0.08), 0px 24px 24px rgba(20, 40, 82, 0.04);
+}
+@media (max-width: 800px){
+    .title{
+        display: none;
+    }
+    .active{
+        width: 41px;
+    }
 }

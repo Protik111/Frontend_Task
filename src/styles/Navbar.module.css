@@ -46,3 +46,9 @@
     width: 32px;
     height: 32px;
 }
+
+@media (max-width: 390px){
+    .search{
+        display: none;
+    }
+}

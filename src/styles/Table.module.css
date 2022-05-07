@@ -37,3 +37,10 @@
 .search:focus {
     outline: none;
 }
+
+@media (max-width) {
+    .tableContainer {
+        width: 646px;
+        height: 865px;
+    }
+}

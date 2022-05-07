@@ -9,10 +9,10 @@ const Home = () => {
         <div className={`${styles.home} container-fluid p-0`}>
             <Navbar></Navbar>
             <div className="row">
-                <div className="col-md-2">
+                <div className="col-md-2 col-sm-1">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-10 col-sm-11">
                     <Table></Table>
                 </div>
             </div>

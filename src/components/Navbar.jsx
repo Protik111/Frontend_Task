@@ -8,11 +8,11 @@ const Navbar = () => {
         <nav className={`${styles.container}`}>
             <div className={`${styles.name_search} dropdown`}>
                 <div className={styles.links}>
-                    <p className="dropdown-toggle ms-5 pt-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <p className="dropdown-toggle ms-5 ms-md-3 pt-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </p>
                 </div>
-                <div className={`${styles.links} px-5 ms-5 pt-1`}>
+                <div className={`${styles.links} px-5 ms-5 ms-md-0 pt-1`}>
                     <input className={styles.search} placeholder="&#61442; Search" type="search" name="search" id="search" />
                 </div>
             </div>

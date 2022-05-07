@@ -1,16 +1,8 @@
 import React from 'react';
 import styles from '../styles/Table.module.css';
 import { DataGrid } from '@mui/x-data-grid';
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-const columns = [
-    { field: 'id', headerName: 'Date Updated', headerClassName: 'super-app-theme--header', width: 140 },
-    { field: 'title', headerName: 'Title', headerClassName: 'super-app-theme--header', width: 120 },
-    { field: 'details', headerName: 'Details', headerClassName: 'super-app-theme--header', width: 270 },
-    { field: 'status', headerName: 'Status', headerClassName: 'super-app-theme--header', width: 150 },
-    { field: 'quantity', headerName: 'Quantity', headerClassName: 'super-app-theme--header', width: 100 },
-    { field: 'price', headerName: 'Price', headerClassName: 'super-app-theme--header', width: 110 },
-    { field: 'amount', headerName: 'Amount', headerClassName: 'super-app-theme--header', width: 110 }
-];
 
 const rows = [
     { id: '11 Nov 2021', title: 'Hammer', details: 'This is a hammer to work with', status: 'Alright 🟢', quantity: '200/300', price: '$10', amount: '$2000.00' },
@@ -26,6 +18,18 @@ const rows = [
 ];
 
 const Table = () => {
+    const matches = useMediaQuery("(max-width:800px)");
+
+    const columns = [
+        { field: 'id', headerName: 'Date Updated', headerClassName: 'super-app-theme--header', width: 140 },
+        { field: 'title', headerName: 'Title', headerClassName: 'super-app-theme--header', width: 120 },
+        { field: 'details', headerName: 'Details', headerClassName: 'super-app-theme--header', width: 270, hide: matches },
+        { field: 'status', headerName: 'Status', headerClassName: 'super-app-theme--header', width: 150 },
+        { field: 'quantity', headerName: 'Quantity', headerClassName: 'super-app-theme--header quantity', width: 100 },
+        { field: 'price', headerName: 'Unit Price', headerClassName: 'super-app-theme--header', width: 110, hide: matches },
+        { field: 'amount', headerName: 'Amount', headerClassName: 'super-app-theme--header', width: 110 }
+    ];
+
     return (
         <div>
             <div>
@@ -43,7 +47,12 @@ const Table = () => {
                         sx={{
                             '& .super-app-theme--header': {
                                 backgroundColor: '#FDF4ED',
-                              }
+                            },
+                            // '.quantity': {
+                            //     '@media (max-width: 800px)': {
+                            //         display: 'none'
+                            //     }
+                            // }
                         }}
                         rows={rows}
                         columns={columns}
