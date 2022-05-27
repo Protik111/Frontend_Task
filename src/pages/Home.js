@@ -1,5 +1,6 @@
 import React from 'react';
 import BottomNav from '../components/BottomNav';
+import FetchDataByHook from '../components/FetchDataByHook/FetchDataByHook';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Table from '../components/Table';
@@ -9,7 +10,7 @@ const Home = () => {
     return (
         <div className={`${styles.home} container-fluid p-0`}>
             <Navbar></Navbar>
-            <div className="row">
+            {/* <div className="row">
                 <div className={`${styles.sidebar} col-md-2 col-sm-1 col-xs-0`}>
                     <Sidebar></Sidebar>
                 </div>
@@ -17,7 +18,8 @@ const Home = () => {
                     <Table></Table>
                 </div>
             </div>
-            <BottomNav></BottomNav>
+            <BottomNav></BottomNav> */}
+            <FetchDataByHook></FetchDataByHook>
         </div>
     );
 };
